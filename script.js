@@ -32,5 +32,9 @@ function obtenerContenido(enlace){
         'Londres': londres,
         'Roma': roma,
     };
+     // Obtener la imagen correspondiente
+     let imagenCiudad = document.getElementById('imagenCiudad');
+     imagenCiudad.src = `imagenes/${enlace.toLowerCase()}.jpg`;
+
 return contenido[enlace];
 }
